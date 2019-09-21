@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect, session, logging, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import random
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
@@ -17,40 +18,33 @@ def home():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-		return render_template('STUlogin.html')
-
-@app.route('/frontenddev', methods=['GET', 'POST'])
-def frontenddev():
-		return render_template('frontenddev.html')
+		return render_template('login.html')
 
 @app.route('/match', methods=['GET', 'POST'])
 def match():
-		return render_template('STUmatch.html')
+		return render_template('match.html')
 
 @app.route('/profile', methods=['GET', 'POST'])
 def profile():
-		return render_template('STUprofile.html')
+		return render_template('profile.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-		return render_template('STUregister.html')
+		return render_template('register.html')
 
-@app.route('/training', methods=['GET', 'POST'])
-def training():
-		return render_template('training.html')
+@app.route('/rating', methods=['GET', 'POST'])
+def rating():
+	if request.method == 'POST':
+		return results()
+	else:
+		return render_template('rating.html')
 
-#BUSINESS ADMIN PAGES
-@app.route('/Blogin', methods=['GET', 'POST'])
-def Blogin():
-		return render_template('BUSlogin.html')
+@app.route('/result', methods=['GET', 'POST'])
+def results():
+	data = random.randrange(2, 6, 1)
+	return render_template('result.html', data=data)
 
-@app.route('/Bprofile', methods=['GET', 'POST'])
-def Bprofile():
-		return render_template('BUSprofile.html')
 
-@app.route('/Bregister', methods=['GET', 'POST'])
-def Bregister():
-		return render_template('BUSregister.html')
 
 
 if __name__ == "__main__":

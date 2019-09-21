@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="static/assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height: 80px;">
+        <div class="container"><img src="static/assets/img/Lendr%20Logo.png" style="width: 104px;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('match')}}" style="font-family: Roboto, sans-serif;">Match</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="font-family: Roboto, sans-serif;" href="training.html">Training</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html" style="font-family: Roboto, sans-serif;">Get Help</a></li>
+                    <li class="nav-item" role="presentation">
+                        <div class="nav-item dropdown" style="margin-top: 5px;"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">JAMES SMITH</button>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="{{url_for('profile')}}">Profile</a><a class="dropdown-item" role="presentation" href="#">Settings</a><a class="dropdown-item" role="presentation" href="#">Tell Friends</a><a class="dropdown-item"
+                                    role="presentation" href="login.html" style="color: rgb(59,156,248);">Log Out</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-catalog dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Get Matched With Fair Loan Providers</h2>
+                    <p>Get better rates. Live a better life.</p>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="d-none d-md-block">
+                                <div class="filters">
+                                    <div class="filter-item">
+                                        <h3>Interest Rate</h3>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">3%</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">4%</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">5%</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">6%</label></div><input type="search"></div>
+                                    <div class="filter-item">
+                                        <h3>Location</h3>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Toronto</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Calgary</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Vancouver</label></div><input type="search"></div>
+                                </div>
+                            </div>
+                            <div class="d-md-none"><a class="btn btn-link d-md-none filter-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="filters" href="#filters" role="button">Filters<i class="icon-arrow-down filter-caret"></i></a>
+                                <div class="collapse"
+                                    id="filters">
+                                    <div class="filters">
+                                        <div class="filter-item">
+                                            <h3>Interest Rate</h3>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">3%</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">4%</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">5%</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">6%</label></div><input type="search"></div>
+                                        <div class="filter-item">
+                                            <h3>Location</h3>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Toronto</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Calgary</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Vancouver</label></div><input type="search"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="products" style="height: 214px;">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title">LENDR</h4>
+                                                <p class="card-text">3.5% Interest Rate</p><button class="btn btn-primary" type="button">More Details</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products" style="height: 214px;">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title">TD BANK</h4>
+                                                <p class="card-text">7.6% Interest Rate</p><button class="btn btn-primary" type="button">More Details</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products" style="height: 214px;">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Ahmed Moseheli</h4>
+                                                <p class="card-text">5% Interest Rate</p><button class="btn btn-primary" type="button">More Details</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Thayallan Senyen</h4>
+                                                <p class="card-text">4.5%</p><button class="btn btn-primary" type="button">More Details</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="background-color: #2b2f31;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>LENDR</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5><strong>LOANS</strong></h5>
+                    <ul>
+                        <li><a href="#" style="color: #d2d1d1;">How it Works</a></li>
+                        <li><a href="#">Learn with LENDR</a></li>
+                        <li><a href="#">View Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5><strong>PAYMENTS</strong><br></h5>
+                    <ul>
+                        <li><a href="https://genm.co/business">Access Loans</a></li>
+                        <li><a href="#">Trust &amp; Safety</a></li>
+                        <li><a href="#">Smart Payments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height: 80px;">
+        <div class="container"><img src="static/assets/img/Lendr%20Logo.png" style="width: 104px;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="{{url_for('match')}}" style="font-family: Roboto, sans-serif;">Match</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="font-family: Roboto, sans-serif;" href="{{url_for('rating')}}">GET A RATING</a></li>
+                    <li class="nav-item dropdown" style="margin-top: 5px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="margin-top: -6px;font-family: Roboto, sans-serif;font-size: 14px;margin-left: 0px;color: rgb(59,156,248);">TAlha atta</a>
+                        <div class="dropdown-menu"
+                            role="menu"><a class="dropdown-item" role="presentation" href="{{url_for('profile')}}">Profile</a><a class="dropdown-item" role="presentation" href="#">Settings</a><a class="dropdown-item" role="presentation" href="#">Tell Friends</a><a class="dropdown-item"
+                                role="presentation" href="login.html" style="color: rgb(59,156,248);">Log Out</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="static/assets/js/smoothproducts.min.js"></script>
+    <script src="static/assets/js/theme.js"></script>
+</body>
+
+</html>

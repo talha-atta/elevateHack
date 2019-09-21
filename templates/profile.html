@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="static/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="static/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="static/assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height: 80px;">
+        <div class="container"><img src="static/assets/img/Lendr%20Logo.png" style="width: 104px;"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{{url_for('match')}}" style="font-family: Roboto, sans-serif;">Match</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="font-family: Roboto, sans-serif;" href="{{url_for('rating')}}">GET A RATING</a></li>
+                    <li class="nav-item dropdown" style="margin-top: 5px;"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="margin-top: -6px;font-family: Roboto, sans-serif;font-size: 14px;margin-left: 0px;color: rgb(59,156,248);">TAlha atta</a>
+                        <div class="dropdown-menu"
+                            role="menu"><a class="dropdown-item" role="presentation" href="{{url_for('profile')}}">Profile</a><a class="dropdown-item" role="presentation" href="#">Settings</a><a class="dropdown-item" role="presentation" href="#">Tell Friends</a><a class="dropdown-item"
+                                role="presentation" href="login.html" style="color: rgb(59,156,248);">Log Out</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-form dark" style="height: 950px;">
+            <div id="wrapper">
+                <div class="d-flex flex-column" id="content-wrapper">
+                    <div id="content" style="margin: 50px;margin-top: 50px;">
+                        <div class="container-fluid">
+                            <div class="row mb-3">
+                                <div class="col-lg-4">
+                                    <div class="card mb-3">
+                                        <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="static/assets/img/Screen%20Shot%202019-09-21%20at%2011.25.06%20AM.png" width="160" height="160">
+                                            <p><strong>Talha Atta</strong></p>
+                                            <p style="margin-top: -18px;">TKS Disruptor</p>
+                                            <div class="mb-3"><button class="btn btn-primary btn-sm" type="button" style="background-color: rgb(59,156,248);">Change Photo</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h6 class="text-primary font-weight-bold m-0">Loan Cycle</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="small font-weight-bold">LENDR Credit Line Repaid<span class="float-right">80%</span></h4>
+                                            <div class="progress progress-sm mb-3">
+                                                <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="row mb-3 d-none">
+                                        <div class="col">
+                                            <div class="card text-white bg-primary shadow">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col">
+                                                            <p class="m-0">Peformance</p>
+                                                            <p class="m-0"><strong>65.2%</strong></p>
+                                                        </div>
+                                                        <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                                    </div>
+                                                    <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card text-white bg-success shadow">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col">
+                                                            <p class="m-0">Peformance</p>
+                                                            <p class="m-0"><strong>65.2%</strong></p>
+                                                        </div>
+                                                        <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                                    </div>
+                                                    <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card shadow mb-3">
+                                                <div class="card-header py-3">
+                                                    <p class="text-primary m-0 font-weight-bold" style="color: rgb(59,156,248);">User Settings</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><label for="username"><strong>Username</strong></label><input class="form-control" type="text" placeholder="user.name" name="username"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><label for="email"><strong>Email Address</strong></label><input class="form-control" type="email" placeholder="user@example.com" name="email"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><label for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" placeholder="John" name="first_name"></div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><label for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" placeholder="Doe" name="last_name"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgb(59,156,248);">Save Settings</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="card shadow">
+                                                <div class="card-header py-3">
+                                                    <p class="text-primary m-0 font-weight-bold" style="color: rgb(59,156,248);">Loan Offers</p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form style="height: 161px;">
+                                                        <div class="form-group"><label for="address"><strong>LENDR</strong><br></label>
+                                                            <p>3.5% Interest</p>
+                                                        </div>
+                                                        <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgb(59,156,248);">Accept</button></div>
+                                                    </form>
+                                                    <form style="height: 161px;margin-top: 25px;">
+                                                        <div class="form-group"><label for="address"><strong>Naveen Ryda</strong><br></label>
+                                                            <p>4.0% Interest</p>
+                                                        </div>
+                                                        <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgb(59,156,248);">Accept</button></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="background-color: #2b2f31;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>LENDR</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5><strong>LOANS</strong></h5>
+                    <ul>
+                        <li><a href="#" style="color: #d2d1d1;">How it Works</a></li>
+                        <li><a href="#">Learn with LENDR</a></li>
+                        <li><a href="#">View Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5><strong>PAYMENTS</strong><br></h5>
+                    <ul>
+                        <li><a href="https://genm.co/business">Access Loans</a></li>
+                        <li><a href="#">Trust &amp; Safety</a></li>
+                        <li><a href="#">Smart Payments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="static/assets/js/smoothproducts.min.js"></script>
+    <script src="static/assets/js/theme.js"></script>
+</body>
+
+</html>
